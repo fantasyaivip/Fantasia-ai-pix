@@ -2,33 +2,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fantasia AI Pix</title>
-<style>
-body {
-  background: #141021;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 30px 15px;
-}
-h1 { color: #ff59bd; }
-button {
-  background: #ff59bd;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 12px;
-  font-size: 18px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasia AI Pix</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #141021;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      background: #24152f;
+      padding: 35px 15px;
+    }
+    h1 { color: #ff59bd; }
+    h2 { color: #ffb8e2; }
+    p { line-height: 1.5; }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .produto {
+      background: #261a35;
+      border: 1px solid #63365c;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+    }
+    .preco {
+      color: #63f5b0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .botao {
+      display: inline-block;
+      background: #ff59bd;
+      color: #141021;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    footer {
+      padding: 25px;
+      color: #ccc;
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-<h1>Fantasia AI Pix</h1>
-<h2>Bem-vindo ao nosso site!</h2>
-<p>Conteúdos digitais exclusivos para maiores de 18 anos.</p>
-<button>Em breve</button>
+  <header>
+    <h1>Fantasia AI Pix</h1>
+    <p>Sua loja de conteúdos digitais</p>
+    <p>Produtos digitais com pagamento seguro</p>
+  </header>
+
+  <main>
+    <h2>Conheça nossos produtos</h2>
+
+    <div class="produto">
+      <h2>E-book Digital Premium</h2>
+      <p>Conteúdo digital exclusivo em PDF.</p>
+      <p class="preco">R$ 9,90</p>
+      <a class="botao" href="#" onclick="return aviso()">
+        Comprar agora
+      </a>
+    </div>
+
+    <div class="produto">
+      <h2>Guia Digital Especial</h2>
+      <p>Aprenda com conteúdos práticos e digitais.</p>
+      <p class="preco">R$ 9,90</p>
+      <a class="botao" href="#" onclick="return aviso()">
+        Comprar agora
+      </a>
+    </div>
+
+    <div class="produto">
+      <h2>Pacote Digital Premium</h2>
+      <p>Materiais digitais para você aproveitar.</p>
+      <p class="preco">R$ 9,90</p>
+      <a class="botao" href="#" onclick="return aviso()">
+        Comprar agora
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Fantasia AI Pix © 2026</p>
+    <p>Loja de produtos digitais</p>
+  </footer>
+
+  <script>
+    function aviso() {
+      alert("Pagamento em configuração. Em breve!");
+      return false;
+    }
+  </script>
 </body>
 </html>
-
